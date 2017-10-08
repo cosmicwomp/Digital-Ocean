@@ -1,0 +1,128 @@
+<p>There are many reasons why a web development company would want to and why they should use a service such as Digital Ocean or Amazon Web Services (AWS) to host their site client websites if they dont have their own linux web server. I am going to go over within this article the advantages to using Digital Ocean, as well as how to set-up a droplet (linux server), and how to easily set-up a wordpress install if you are going to be using that platform using Server Pilot. If you are not going to be using WordPress then you can skip through that section and I will show you how to set-up a web server.</Type service ssh restart so that all our new settings for SSH take effect. To access your server in the future, you will need to type ssh hellokitty@123.123.123.123 (replacing the IP with the one Digital Ocean provides or your hostname and replacing hellokitty with your chosen username). Then you can type su at the command prompt to become root to make server modifications.</p>
+
+<p>Note: If you are going to look into using the Digital Ocean service for hosting your own website then please sign-up using my <a href="https://m.do.co/c/9131ed23f134">Sign-Up URL</a>. This will give you a 10 dollar credit which could be anywhere from a month to two months free depending on which plan you choose. This will also give me kickback if you decide to continue with the service.</p>
+<h3>Benefits to Using Digital Ocean:</h3>
+<ul>
+ 	<li>Highl Level of Control over your Virtual Private Servers.</li>
+ 	<li>Very Reasonable Prices: $5 a month starting for hosting services.</li>
+ 	<li>SSD hard drives keep droplet set-up times in under 1 minute.</li>
+ 	<li>Intuitive Web Interface to manage Multiple droplets (Virtual Web Servers)</li>
+ 	<li>Easy to deploy prebuilt images</li>
+ 	<li>More flexibility in tweaking your hosting environment compared to standard hosting options.</li>
+ 	<li>Easily scalable in order to update your VPS to add more SSD space, RAM, transfer brandwith and so forth even though there are bandwith limits which may means on you may pay more then the basic price depending on traffic spikes.</li>
+ 	<li>API makes it easy to build tools and increases developer community</li>
+ 	<li>Check out Marc Qualies article regarding other reasons: <a href="https://marcqualie.com/2013/05/why-i-use-digital-ocean-hosting">Additional Reasons to use Digital Ocean</a></li>
+</ul>
+<h3>How to Set-up a Digital Ocean Droplet</h3>
+<p>Once you get your Digital Ocean account set-up by <a href="https://m.do.co/c/9131ed23f134">signing-up here.</a> then you begin to create a droplet (Virtual Private Server).</p>
+
+<p>If you look at the navigation menu (below) you will want to click create in the top right hand corner and then choose droplets:</p>
+
+<img class="alignnone size-medium wp-image-11" src="http://nickleech.com/wp-content/uploads/2017/10/navmenu-300x19.png" alt="" width="300" height="19" />
+
+<img class="alignnone size-medium wp-image-12" src="http://nickleech.com/wp-content/uploads/2017/10/droplet-185x300.png" alt="" width="185" height="300" />
+
+<p>Your first option is going to be choosing which image you would like. You are going to have 6 options which will be: Ubuntu, FreeBSD, Fedora, Debian, CoreOS, CentOS. You can select whatever image you would like but for this specific example we will just leave Ubuntu selected.<Type service ssh restart so that all our new settings for SSH take effect. To access your server in the future, you will need to type ssh hellokitty@123.123.123.123 (replacing the IP with the one Digital Ocean provides or your hostname and replacing hellokitty with your chosen username). Then you can type su at the command prompt to become root to make server modifications.>
+
+<img class="alignnone size-medium wp-image-14" src="http://nickleech.com/wp-content/uploads/2017/10/chooseos-300x87.png" alt="" width="300" height="87" />
+
+<p>The next option is going to be to choose the size of image you would like. They have different options depending on the size of the SSD, size and number of CPUS, and the transfer size allowed. You can also upgrade your RAM which is ideal for large databases, or you could upgrade your CPU for compute-heavy workloads like front-end application servers, ad-serving or batch processing. In this instance you can just choose the cheap 5 dollar a month plan and leave the other tabs as they are.</p>
+
+<img src="http://nickleech.com/wp-content/uploads/2017/10/choosesize-300x99.png" alt="" width="300" height="99" class="alignnone size-medium wp-image-16" />
+
+<p> Next, you will need to choose your datacenter region.</p>
+
+<img src="http://nickleech.com/wp-content/uploads/2017/10/datacenter-300x103.png" alt="" width="300" height="103" class="alignnone size-medium wp-image-18" />
+
+<p>The second to last section has options such as Private Networking, Backups, IPv6, User Data, Monitoring. If you are going to be running a website then I would definitely recommend setting up backup unless you want to manage/create your own. They will be done weekly if you do select this option. </p>
+<p>The other option gives you the ability to specify your own SSH key so you can connect securely to your server. If you do not provide an SSH key then you will get an email with a root username and a password in order to log-in to your server. Note you cannot enable SSH on a droplet after you have already set it up.</p>
+
+<img src="http://nickleech.com/wp-content/uploads/2017/10/lasttwooptions-300x110.png" alt="" width="300" height="110" class="alignnone size-medium wp-image-19" />
+
+<p>Finally you can choose how many droplets you would like to create and you can name the droplet for easy management purposes.</p>
+
+<img src="http://nickleech.com/wp-content/uploads/2017/10/finalize-300x110.png" alt="" width="300" height="110" class="alignnone size-medium wp-image-20" />
+
+<p>You can manage your droplets by clicking on Droplets in the navigation menu.</p>
+
+<img src="http://nickleech.com/wp-content/uploads/2017/10/managedroplets-300x99.png" alt="" width="300" height="99" class="alignnone size-medium wp-image-21" />
+
+<h3>Benefits to using Server Pilot IO:</h3>
+	<li>Update PHP version easily.</li>
+	<li>Host multiple sites on one droplet.</li>
+	<li>Easier/Quicker then setting up via the command line.</li>
+	<li>Automated server scurity updates.</li>
+	<li>Easily Deploy SSL.</li>
+	<li>Makes it easier for developers to deploy websites without having to worry about a server admin.</li>
+
+
+<h3>Setting up Wordpress using Server Pilot IO on your droplet:</h3>
+
+<p>You can sign-up for ServerPilotIO here: <a href="https://serverpilot.io/a/a7027173cd94" rel="noopener" target="_blank">Sign-Up Here!</a></p>
+
+<p>Once you are logged into your ServerPilotIO account then you can click on Apps.</p>
+
+<img src="http://nickleech.com/wp-content/uploads/2017/10/apps.png" alt="" width="154" height="281" class="alignnone size-full wp-image-22" />
+
+<p>You can then choose to create a new WordPress app by selecting the green button.</p>
+
+<img src="http://nickleech.com/wp-content/uploads/2017/10/createapp-300x42.png" alt="" width="300" height="42" class="alignnone size-medium wp-image-23" />
+<p>You will then want to select the WordPress option below. Fill out the following sections as those will be the credentials for your WordPress account. </p>
+
+<img src="http://nickleech.com/wp-content/uploads/2017/10/wordpresscreds-300x101.png" alt="" width="300" height="101" class="alignnone size-medium wp-image-26" />
+
+<p> Select the most up to date and stable PHP version, which would be PHP 7.1 at this time, and then specify your servers IP address which can be found within your Digital Oceans account after you manage your droplets. Once everything is filled out you can then click create app.</p>
+
+<img src="http://nickleech.com/wp-content/uploads/2017/10/serverwordpress-300x82.png" alt="" width="300" height="82" class="alignnone size-medium wp-image-25" />
+
+<p>Once that is complete and you give it just a little bit of time then WordPress should be up on your domain in a jiffy. The only issues that would happen would be if you did not have the DNS records set-up correctly at your domain name registrar.</p>
+
+<p>Now if you dont want to use WordPress then you can just set-up whatever type of Web Server you would like as this is your own Virtual Private Linux Server. <br> The following page will show you how to: <a href="https://www.digitalocean.com/community/tutorials/how-to-install-linux-nginx-mysql-php-lemp-stack-on-ubuntu-14-04">Set up Linux, nginx, MySQL, PHP (LEMP) stack on Ubuntu 14.04</a></p>
+
+<h3>Setting up LAMP on Digital Ocean:</h3>
+
+<p>After you receive your root password and IP, open up a terminal window, type ssh root@123.123.123.123 and replace with your provided IP address. Next, let’s first start by getting some basic security in place for your new server.</p>
+<p>Change the root password right away by typing passwd once logged in. Choose your favorite password creation tool and make sure it’s highly secure with upper, lower, punctuation, and 16 characters should be good.</p>
+<p>Next, we’re going to add a new user that you will use to access your server over SSH for all future sessions – we will be disabling SSH access for root in a bit. Type adduser hellokitty to create a new user with the username hellokitty. Choose whatever username you want, and it should something hard to associate with your website. Choose a secure password.</p>
+<p>Now, create a new group that will be used for SSH by typing groupadd sshusers so that you can add any additional usernames directly to this group for SSH access down the road. The groupname “sshusers” can be whatever you want just like the username, but update #6 and #7 below also.</p>
+<p>Let’s add hellokitty to this new group by typing gpasswd -a hellokitty sshusers</p>
+<p>We’re going to edit the sshd_config file that is used to access the server over SSH by typing nano /etc/ssh/sshd_config
+	<li>Look for PermitRootLogin yes and change to PermitRootLogin no – this will disable root login from using SSH.</li>
+	<li>Look for PasswordAuthentication no and change to PasswordAuthentication yes – if you’re comfortable setting up SSH keys, you can come back and change this back to “no” later once you have your keys setup properly.</li>
+	<li>At the end of the file, add AllowGroups sshusers – this is the group you created above.</li>
+	<li>Type service ssh restart so that all our new settings for SSH take effect. To access your server in the future, you will need to type ssh hellokitty@123.123.123.123 (replacing the IP with the one Digital Ocean provides or your hostname and replacing hellokitty with your chosen username). Then you can type su at the command prompt to become root to make server modifications.</li>
+<p>going to get a lot of script kiddies knocking on your SSH door, so I like to update the following files so that I don’t worry about these attacks. This step assumes you have a static IP at your office or home location. If you have a standard home provider like DSL or Comcast, move to step #9. You can also read about SSH throttling to minimize attacks even further. Let’s edit some files…</p>
+	<li>nano /etc/hosts.deny and add sshd: ALL to the end of the file – this file is read first and prevents all SSH access.</li>
+	<li>nano /etc/hosts.allow and add sshd: 100.100.100.100 to the end, where you will be replacing this IP with your static office IP to allow access. Again, only do this if you have a static IP from your ISP.</li>
+
+<p>Let’s get a simple firewall installed. Type apt-get install ufw to install Uncomplicated Firewall – great resource here for more details. Now, some basic rules:</p>
+<li>Type ufw allow ssh to access the server.</li>
+<li>Type ufw allow www for web traffic.</li>
+<li>Type ufw allow https if you plan on install SSL on your site later.</li>
+<li>Finally, type ufw enable to turn the firewall on.</li>
+	
+<p>To install Apache, type apt-get install apache2 at the command prompt.</p>
+<p>For MySql, type apt-get install mysql-server and it will then give you the option to choose a “root” password for your database server. Again, keep this password secure, and make it different than your server’s root password.</p>
+<p>Finally, to install PHP type apt-get install libapache2-mod-php5 php5-mysql php5-dev php5-curl php5-gd php5-imagick php5-mcrypt php5-memcache php5-common php5-pspell php5-snmp php5-sqlite php5-xmlrpc php5-xsl to setup PHP with the most common extensions. I think that’s most everything, but let me know if I missed something.</p>
+<p>You will probably want mod_rewrite on your LAMP server, so type a2enmod rewrite at the command prompt.</p>
+<p>If you plan on using SSL, you can type a2enmod ssl then a2ensite default-ssl at the command prompt. You will need to modify /etc/apache2/sites-available/default-ssl with the proper paths to your private and certificate key files. This step is not necessary if you do not plan on using SSL.</p>
+<p>Let’s type cd /home/hellokitty and then mkdir www to create a working directory for your new site. Let’s type chown hellokitty:hellokitty /home/hellokitty/www for good measure.</p>
+<p>Now, type nano /etc/apache2/sites-available/default and change /var/www to /home/hellokitty/www in those couple spots. Do the same for nano /etc/apache2/sites-available/default-ssl if you configured step #14.</p>
+<p>We need to add www-data to our user so our web server runs properly using gpasswd -a www-data hellokitty</p>
+<p>And last, you want to restart apache by typing service apache2 restart at the command prompt. You can add ServerName yourdomain.com to /etc/apache2/apache2.conf to stop the warning message on restart, replacing yourdomain.com with the domain you used to setup the server prior to step #1.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
